@@ -1,0 +1,180 @@
+// main: ..//style.less
+footer{
+.slider{
+        .slider__header {
+            text-align: center;
+            margin-bottom: 50px;
+    
+            h2 {
+                font-size: 15px;               
+                text-align: center;
+                text-transform: uppercase;
+                
+                color: #FFFFFF;
+            }
+        }
+        .slider__inner {
+            background: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 90px;
+            margin: 0 166px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 8px 0px 4px rgba(160, 160, 160, 0.25);
+            border-radius: 28px;
+    
+            .slider__left {
+                margin: 0 auto;
+    
+                img {
+                    border-radius: 100%;
+                    width: 90%;
+                }
+            }
+    
+            .slider__right {
+                width: 700px;
+    
+                h3 {
+                    font-family: "MuseoSansBlack";
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    color: @black;
+                }
+    
+                p {
+                    font-size: 20px;
+                    line-height: 25px;
+                    font-family: "MuseoSansBold";
+                }
+            }
+        }
+    
+    }
+}
+    
+    @media (max-width:1024px) {
+        .slider {
+            .container {
+                max-width: 1000px;
+            }
+    
+            .slider__inner {
+                .slider__right {
+                    margin-top: 30px;
+                }
+            }
+    
+        }
+    }
+    
+    @media (max-width:426px) {
+        .slider {
+            .slider__inner {
+                margin: 0;
+            }
+        }
+    }
+    
+    @media (max-width:375px) {
+        .slider {
+            .slider__inner {
+                padding: 65px;
+            }
+        }
+    }
+    
+    .slideshow-container {
+        max-width: 1400px;
+        position: relative;
+        margin: auto;
+    
+    
+    }
+    
+    .mySlides {
+        display: none;
+    }
+    
+    .mySlides img {
+        border-radius: 44px;
+        width: 90%;
+    }
+    
+    .mySlides.active {
+        display: inline;
+        background: transparent;
+    }
+    
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 14px 20px;
+        color:#FF6681;
+        border: 1px solid white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6 ease;
+        border-radius: 0 3px 3px 0;
+    }
+    
+    .next {
+        background: #ffffff;;
+        right: 0;
+        border-radius: 100%;
+    }
+    
+    .prev {
+        background: #ffffff;;
+        left: 0;
+        border-radius: 100%;
+    }
+    
+    .prev:hover,
+    .next:hover {
+     background-color: #FFFFFF;
+     transition-duration: 1s;
+     opacity: 75%;
+    }
+    
+    .text {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    
+    
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+    
+        top {
+            opacity: .1
+        }
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+    
+        top {
+            opacity: .1
+        }
+    
+    }
